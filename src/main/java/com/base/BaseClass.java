@@ -15,11 +15,11 @@ public class BaseClass {
 	
 	@Test
 	public void setUp() {
-		System.setProperty("webdriver.gecko.driver", "E:\\SeleniumWebdriverNew\\geckodriver-v0.33.0-win64\\geckodriver.exe");
-		//System.setProperty("web.driver.chrome", "E:\\SeleniumWebdriverNew\\chromedriver-win64\\chromedriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\SeleniumWebdriverNew\\geckodriver-v0.33.0-win64\\geckodriver.exe");
+		System.setProperty("web.driver.chrome", "E:\\SeleniumWebdriverNew\\chromedriver-win64\\chromedriver.exe");
 		
-		//driver = new ChromeDriver();
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+		//driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
